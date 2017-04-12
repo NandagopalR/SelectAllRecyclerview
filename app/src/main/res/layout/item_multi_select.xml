@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+  <LinearLayout
+      android:id="@+id/layout_content"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_toLeftOf="@+id/cb_person"
+      android:orientation="vertical"
+      >
+
+    <TextView
+        android:id="@+id/tv_person_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        tools:text="@string/app_name"
+        />
+
+    <TextView
+        android:id="@+id/tv_person_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        tools:text="@string/app_name"
+        />
+
+  </LinearLayout>
+
+  <CheckBox
+      android:id="@+id/cb_person"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      />
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_below="@+id/layout_content"
+      android:background="@color/colorAccent"
+      />
+
+</RelativeLayout>
